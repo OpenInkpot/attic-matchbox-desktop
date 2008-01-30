@@ -1,0 +1,4 @@
+version=2
+
+http://projects.o-hand.com/matchbox/sources/matchbox-desktop/0.9/matchbox-desktop-(.*)\.tar.gz \
+	debian	uupdate

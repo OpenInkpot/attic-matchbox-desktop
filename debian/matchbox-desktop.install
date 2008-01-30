@@ -1,0 +1,6 @@
+debian/tmp/etc/matchbox-desktop/*
+debian/tmp/usr/bin/*
+debian/tmp/usr/lib/matchbox/desktop/*.so
+debian/tmp/usr/share/applications/*
+debian/tmp/usr/share/matchbox-desktop/*
+debian/tmp/usr/share/pixmaps/*

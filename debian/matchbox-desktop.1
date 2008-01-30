@@ -1,0 +1,65 @@
+.\" matchbox-desktop.1
+.\" Copyright 2004  Moray Allan
+.TH matchbox-desktop 1 "Jul 17 2004" ""
+.SH NAME
+matchbox-desktop \- a desktop application launcher for resource-limited systems
+.SH SYNOPSIS
+.B matchbox-desktop
+[\fIoptions\fR]
+.SH DESCRIPTION
+.B matchbox-desktop
+uses the desktop background to provide an application
+launcher. It reads the standard desktop entry specification files also used
+by GNOME and KDE to discover the applications available on the system.
+
+.B matchbox-desktop
+allows modules to be loaded for additional functionality.
+
+Matchbox is a base environment for the X Window System running on non-desktop
+embedded platforms such as handhelds, set-top boxes, kiosks and anything else
+for which screen space, input mechanisms or system resources are limited.
+.SH OPTIONS
+.TP
+.BI \-display\  display
+X display to connect to
+.TP
+.BI \-\-icon\-size\  int
+Icon size (default: 32)
+.TP
+.BI \-\-icon\-padding\  int
+Amount of padding between icons
+.TP
+.BI \-\-font\  font
+Icon font
+.TP
+.BI \-\-titlefont\  font
+Title font
+.TP
+.BI \-\-fontcol\  color
+Font color
+.TP
+.B \-\-no\-outline
+Don't outline text
+.TP
+.B \-\-no\-title
+Don't render current folder title
+.TP
+.BI \-\-bg\  background\ definition
+Where \fIbackground definition\fR is one of the following:
+ img-stretched:\fIfilename\fR
+ img-tiled:\fIfilename\fR
+ img-centered:\fIfilename\fR
+ col-solid:\fIcolor definition\fR
+ col-gradient-vertical:\fIstart color\fR,\fIend color\fR
+ col-gradient-horizontal:\fIstart color\fR,\fIend color\fR
+
+Colors are specified by color names or by RGB definitions of the form
+`rgb:\fIR\fR/\fIG\fR/\fIB\fR' or `#\fIRGB\fR'.
+.TP
+\fB\-\-help\fR
+help
+
+.SH AUTHOR
+.B matchbox-desktop
+was written by Matthew Allum <mallum@o-hand.com>.
+

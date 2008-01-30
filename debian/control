@@ -1,0 +1,40 @@
+Source: matchbox-desktop
+Section: gui
+Priority: optional
+Maintainer: Sergey Lapin <slapin@slind.org>
+Build-Depends: cdbs (>= 0.4.21), debhelper (>= 4.1.0), pkg-config, libstartup-notification0-dev, zlib1g-dev, libmatchbox-dev (>= 1.7-4), libxft-dev
+XCS-Cross-Host-Build-Depends: cdbs (>= 0.4.21), cdbs-slind, debhelper (>= 4.1.0), pkg-config
+XCS-Cross-Build-Depends: libstartup-notification0-dev, zlib1g-dev, libmatchbox-dev (>= 1.7-4), libxft-dev
+Standards-Version: 3.6.2
+
+Package: matchbox-desktop
+Section: gui
+Architecture: any
+Depends: ${shlibs:Depends}, matchbox-common
+Description: desktop application launcher for resource-limited systems
+ matchbox-desktop uses the desktop background to provide an application
+ launcher. It reads the standard desktop entry specification files also used
+ by GNOME and KDE to discover the applications available on the system.
+ .
+ matchbox-desktop allows modules to be loaded for additional functionality.
+ This package includes modules for a task switcher and simple file browser.
+ .
+ Matchbox is a base environment for the X Window System running on non-desktop
+ embedded platforms such as handhelds, set-top boxes, kiosks and anything else
+ for which screen space, input mechanisms or system resources are limited.
+
+Package: matchbox-desktop-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, matchbox-desktop (= ${Source-Version})
+Description: desktop application launcher [development files]
+ matchbox-desktop uses the desktop background to provide an application
+ launcher. It reads the standard desktop entry specification files also used
+ by GNOME and KDE to discover the applications available on the system.
+ matchbox-desktop allows modules to be loaded for additional functionality.
+ .
+ This package provides development files for matchbox-desktop.
+ .
+ Matchbox is a base environment for the X Window System running on non-desktop
+ embedded platforms such as handhelds, set-top boxes, kiosks and anything else
+ for which screen space, input mechanisms or system resources are limited.

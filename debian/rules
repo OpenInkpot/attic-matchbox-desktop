@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+include /usr/share/cdbs/1/rules/debhelper-slind.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_DH_INSTALL_ARGS = --list-missing
+
+DEB_CONFIGURE_EXTRA_FLAGS = --enable-startup-notification --enable-dnotify --sysconfdir=/etc
