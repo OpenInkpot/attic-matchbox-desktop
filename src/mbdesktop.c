@@ -1309,6 +1309,7 @@ handle_key_event(MBDesktop *mb, XKeyEvent *e)
   switch (key = XKeycodeToKeysym (mb->dpy, e->keycode, 0))
     {
     case XK_Left:
+    case XK_9:
       if (mbdesktop_current_folder_view (mb) == VIEW_LIST)
 	{
 	  mbdesktop_item_folder_prev_activate_cb((void *)mb, 
@@ -1321,6 +1322,7 @@ handle_key_event(MBDesktop *mb, XKeyEvent *e)
 	    } else return;
       break;
     case XK_Right:
+    case XK_0:
       /* 
        * Follow folders for list views
        */
@@ -1372,6 +1374,7 @@ handle_key_event(MBDesktop *mb, XKeyEvent *e)
 				      (void *)mb->kbd_focus_item);
       return;
     case XK_BackSpace:
+    case XK_Escape:
       mbdesktop_item_folder_prev_activate_cb((void *)mb, 
 					     (void *)mbdesktop_item_get_first_sibling(mb->kbd_focus_item));
 	return;
