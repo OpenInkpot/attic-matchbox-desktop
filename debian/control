@@ -1,10 +1,10 @@
 Source: matchbox-desktop
 Section: gui
 Priority: optional
-Maintainer: Sergey Lapin <slapin@slind.org>
-Build-Depends: cdbs (>= 0.4.21), debhelper (>= 4.1.0), pkg-config, libstartup-notification0-dev, zlib1g-dev, libmatchbox-dev (>= 1.7-4), libxft-dev
+Maintainer: Yauhen Kharuzhy <jekhor@gmail.com>
+Build-Depends: cdbs (>= 0.4.21), debhelper (>= 4.1.0), pkg-config, libstartup-notification0-dev, zlib1g-dev, libmatchbox-dev (>= 1.7-4)
 XCS-Cross-Host-Build-Depends: cdbs (>= 0.4.21), cdbs-slind, debhelper (>= 4.1.0), pkg-config
-XCS-Cross-Build-Depends: libstartup-notification0-dev, zlib1g-dev, libmatchbox-dev (>= 1.7-4), libxft-dev
+XCS-Cross-Build-Depends: libstartup-notification0-dev, zlib1g-dev, libmatchbox-dev (>= 1.7-4)
 Standards-Version: 3.6.2
 
 Package: matchbox-desktop
