@@ -1,3 +1,12 @@
+matchbox-desktop (0.9.1-4.slind1.oi1) UNRELEASED; urgency=low
+
+  * UNRELEASED
+  * Workaround for V3 keyboard
+  * Install /etc/matchbox/mbdesktop_modules
+  * OI port
+
+ -- Yauhen Kharuzhy <jekhor@gmail.com>  Wed, 29 Oct 2008 20:48:25 +0000
+
 matchbox-desktop (0.9.1-4.slind1) unstable; urgency=low
 
   * Using cdbs-slind
